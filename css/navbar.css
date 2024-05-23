@@ -1,0 +1,50 @@
+.search-input {
+    width: 30rem;
+}
+.search-input:focus {
+    outline: 1px solid #002ab0;
+}
+.search-btn {
+    color: white;
+    background-color: #002ab0;
+    transition: background-color 0.3s ease;
+}
+.search-btn:hover {
+    color: white;
+    background-color: #3a61e0;
+}
+.search-btn:active {
+    color: white ;
+    background-color: #3a61e0 ;
+}
+.second-navbar {
+    background-color: #e6af48;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.second-navbar div button {
+    background-color: #002ab0;
+    color: white;
+}
+.second-navbar div button:hover {
+    background-color: #284bbe;
+    color: white;
+}
+#dropdown-menu {
+    transform: translate3d(48px, 130.667px, 0px) !important;
+    background-color: #002ab0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.1s ease-out;
+}
+#dropdown-menu > li > a {
+    color: white;
+}
+nav {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 40px;
+    transition: top 0.2s ease;
+}
