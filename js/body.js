@@ -35,4 +35,11 @@ $(document).ready(() => {
         prevArrow: $("#itemPrevArrow"),
         nextArrow: $("#itemNextArrow")
     });
+
+    $(".coop-slide").slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        prevArrow: $("#coopPrevBtn"),
+        nextArrow: $("#coopNextBtn")
+    })
 });
