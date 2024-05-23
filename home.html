@@ -104,6 +104,52 @@
             background-color: #002ab0;
         }
         /*Hero image style end */
+        /*Main section 1*/
+        .main-item > div {
+            margin-bottom: 15rem;
+            width: 90%;
+            height: 4rem;
+            background-color: #e6af48;
+            position: relative;
+        }
+        .main-item > div > .image {
+            width: 100%;
+            height: 15rem;
+            background-color: #002ab0;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            transition: bottom 0.2s ease, left 0.2s ease;
+        }
+        .main-item > div:hover > .image {
+            bottom: 50px;
+            left: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #item-slides > .slick-list {
+            padding-top: 250px;
+            height: 640px;
+        }
+        .slick-slider {
+            user-select: text;
+        }
+        #itemPrevArrow {
+            background-color: transparent;
+            transition: background-color 0.2s ease;
+        }
+        #itemNextArrow {
+            background-color: transparent;
+            transition: background-color 0.2s ease;
+        }
+        #itemPrevArrow:hover {
+            background-color: #002ab0;
+            color: white;
+        }
+        #itemNextArrow:hover {
+            background-color: #002ab0;
+            color: white;
+        }
     </style>
     <title>Home</title>
 </head>
@@ -193,16 +239,117 @@
             <i class="bi bi-chevron-right"></i>
         </button>
     </div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quia voluptas possimus repellendus magni natus nostrum tenetur iure soluta quasi in repellat nesciunt, voluptate rerum mollitia corrupti. Exercitationem, soluta.
+    
+    <!-- Main Item -->
+    <div class="container mt-5 mb-3">
+        <h4 class="text-center" >DÒNG SẢN PHẨM CHÍNH</h4>
+        <div id="item-slides">
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">DỤNG CỤ CẦM TAY</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">MÁY HÀN</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">DÂY CHUYỀN KẾT CẤU THÉP</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">MÁY CẮT CNC</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">MÁY GIA CÔNG TẤM</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">DÂY CHUYỀN TỰ ĐỘNG HÓA</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">DỤNG CỤ ĐIỆN CẦM TAY</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">GIẢI PHÁP HÀN ROBOT</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">DÂY CHUYỀN KẾT CẤU THÉP</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">MÁY CẮT CNC</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">MÁY GIA CÔNG TẤM</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div>
+                    <div class="d-flex flex-column h-100">
+                        <h5 class="mt-auto text-center">DÂY CHUYỀN TỰ ĐỘNG HÓA</h5>
+                    </div>
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="button" id="itemPrevArrow" class="me-4 border border-1 rounded-circle">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button type="button" id="itemNextArrow" class=" border border-1 rounded-circle">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
 
 <!-- Bootstrap 5 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
