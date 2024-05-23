@@ -30,7 +30,6 @@ $(document).ready(() => {
         }
     });
 
-
     $("#outer-hero-image").on("mouseenter",() => {
         const prevArrow = document.getElementById("prevArrow");
         const nextArrow = document.getElementById("nextArrow");
@@ -47,4 +46,13 @@ $(document).ready(() => {
         nextArrow.style.marginRight = "-35px"
 
     })
+
+    // Item menu slide
+    $("#item-slides").slick({
+        rows: 2,
+        slidesPerRow: 3,
+        prevArrow: $("#itemPrevArrow"),
+        nextArrow: $("#itemNextArrow")
+    });
+
 });
