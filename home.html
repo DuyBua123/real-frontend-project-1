@@ -10,12 +10,135 @@
     <!-- Slicker CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- <link rel="stylesheet" href="styles/navbar.css"> -->
+    <style>
+
+        .search-input {
+            width: 30rem;
+        }
+        .search-input:focus {
+            outline: 1px solid #002ab0;
+        }
+        .search-btn {
+            color: white;
+            background-color: #002ab0;
+            transition: background-color 0.3s ease;
+        }
+        .search-btn:hover {
+            color: white;
+            background-color: #3a61e0;
+        }
+        .search-btn:active {
+            color: white ;
+            background-color: #3a61e0 ;
+        }
+        .second-navbar {
+            background-color: #e6af48;
+            width: 100%;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .second-navbar div button {
+            background-color: #002ab0;
+            color: white;
+        }
+        .second-navbar div button:hover {
+            background-color: #284bbe;
+            color: white;
+        }
+        #dropdown-menu {
+            transform: translate3d(48px, 130.667px, 0px) !important;
+            background-color: #002ab0;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.1s ease-out;
+        }
+        #dropdown-menu > li > a {
+            color: white;
+        }
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 40px;
+            transition: top 0.3s ease;
+        }
+    </style>
     <title>Home</title>
 </head>
 <body>
 
-    
+    <header>
+        <!-- General information -->
+        <div class="d-flex justify-content-end w-100 py-1 pe-5 my-auto" style="background-color: rgb(229, 225, 225);">
+            <h6 class="py-1">Bảo hành Online</h6>
+            <h6 class="py-1 mx-3 px-2">Liên hệ</h6>
+            <div class="my-0 dropdown">
+                <button class="p-0 btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/Flag_of_Vietnam.svg" alt="Vietnam flag" class="pb-1" width="15" height="15">
+                    <h6 class="d-inline">Tiếng Việt</h6>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- Navbar -->
+        <nav id="navbar">
+            <!-- First navbar -->
+            <div class="d-flex px-5 py-4 bg-white">
+                <h5 class="my-auto">LOGO HERE</h5>
+                <!-- Search field -->
+                <div class="ms-auto">
+                    <div class=" d-flex">
+                        <input type="text" class="search-input ps-2 pe-1 d-inline border rounded-start-pill" placeholder="Tìm kiếm....">
+                        <button class="search-btn d-inline input-group-text rounded-end-pill">
+                            <i class="bi bi-search" style="font-size: 18px;"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Shopping cart -->
+                <h5 class="my-auto ms-5">Shopping cart</h5>
+            </div>
+            <!-- Second navbar -->
+            <div class="second-navbar d-flex">
+                <!-- Item Menu -->
+                <div class="d-inline-block">
+                    <button id="dropdown-btn" class="d-flex border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-list fs-3 "></i>
+                        <h6 class="d-inline my-auto ms-2 me-5 ">Danh mục sản phẩm</h6>
+                        <i class="bi bi-chevron-down my-auto"></i>
+                    </button>
+                    <ul id="dropdown-menu" class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="#" >-> Máy hàn </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Dụng cụ điện cầm tay </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Phụ kiện, vật liệu hàn cắt  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Máy cắt CNC  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Dây chuyền kết cấu thép  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Máy gia công tấm  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Máy gia công chính xác  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Dây chuyền tự động hóa  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Phần mềm  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Thiết bị gia công cơ khí tổng hợp  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Dịch vụ Kỹ thuật  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Dịch vụ mua bán, nâng cấp dây chuyền nhà máy  </a></li>
+                        <li><a class="dropdown-item" href="#"> -> Robot Công nghiệp  </a></li>
+                    </ul>
+                </div>
+                <h6 class="d-inline mx-4 my-auto" style="color: #002ab0;">GIỚI THIỆU</h6>
+                <h6 class="d-inline me-4 my-auto" style="color: #002ab0;">ĐỐI TÁC & KHÁCH HÀNG</h6>
+                <h6 class="d-inline me-4 my-auto" style="color: #002ab0;">HƯỚNG DẪN</h6>
+                <h6 class="d-inline me-4 my-auto" style="color: #002ab0;">TIN TỨC</h6>
+                <h6 class="d-inline me-4 my-auto" style="color: #002ab0;">LIÊN HỆ</h6>
+                <h6 class="d-inline me-4 my-auto" style="color: #002ab0;">THUÊ VŨ KHÍ</h6>
+            </div>
+        </nav>
+    </header>
+
+    <div style="margin-top: 9rem;">
+
+    </div>
     
 <!-- Bootstrap 5 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -26,6 +149,6 @@
   crossorigin="anonymous"></script>
 <!-- Slicker JS -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!-- <script src="js/javbar.js"></script> -->
+<script src="js/navbar.js"></script>
 </body>
 </html>
